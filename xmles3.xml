@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<text>
+    il primo xml con validazione
+</text>
+<text />
+
+<!-- output xmllint
+
+    xmles3.xml:5: parser error : Extra content at the end of the document
+    <text />
+
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<text>
+    il primo xml con validazione
+</text>
+
+<!-- corretto l'errore eliminando il tag <text /> di troppo-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<text>
+    <b>titolo </b>
+    <i>sottotitolo</i>
+    il primo xml con validazione
+</text>
+
+<!-- aggiunto elemento figlio <b> e un relativo elemento sibling <i>-->
